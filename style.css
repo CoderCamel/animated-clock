@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.clock {
+    position: relative;
+    margin: 20vh auto;
+
+    height: 20rem;
+    width: 20rem;
+    
+    border-radius: 50%;
+    border: 10px solid black;
+}
+
+.hand {
+    position: absolute;
+    background-color: blue;
+    height: 6px;
+    width: 50%;
+    top: 50%;
+    transform-origin: 100%;
+}
