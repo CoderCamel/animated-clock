@@ -22,8 +22,19 @@ body {
 .hand {
     position: absolute;
     background-color: blue;
-    height: 6px;
+    height: 7px;
     width: 50%;
     top: 50%;
     transform-origin: 100%;
+    transition: all 0.5s;
 }
+
+.second-hand {
+    transform: rotate(90deg);
+    height: 4px;
+}
+
+.minute-hand {
+    height: 6px;
+}
+
