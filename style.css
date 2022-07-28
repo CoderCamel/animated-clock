@@ -5,7 +5,21 @@
 }
 
 body {
-    background-color: aliceblue;
+    background: linear-gradient(#B1F3FF, #9198e5);
+    height: 100vh;
+    font-family: lato;
+}
+
+a, a:visited {
+    color: black;
+}
+
+footer {
+    border: 1px solid black;
+    padding: 0.5rem;
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
 }
 
 .clock {
@@ -16,25 +30,35 @@ body {
     width: 20rem;
     
     border-radius: 50%;
-    border: 10px solid black;
+    border: 12px solid black;
 }
 
 .hand {
     position: absolute;
-    background-color: blue;
+    background-color: black;
     height: 7px;
     width: 50%;
     top: 50%;
     transform-origin: 100%;
     transition: all 0.5s;
+    transition-timing-function: cubic-bezier(1, 2.43, 0.61, 0.98);
 }
 
 .second-hand {
     transform: rotate(90deg);
-    height: 4px;
+    height: 3px;
 }
 
 .minute-hand {
-    height: 6px;
+    height: 5px;
+}
+
+.hour-hand {
+    width: 40%;
+    left: 10%;
+}
+
+.notransition {
+    transition: none !important;
 }
 
