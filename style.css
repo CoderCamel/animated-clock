@@ -31,7 +31,9 @@ footer {
     
     border-radius: 50%;
     border: 12px solid black;
+    transform: translateY(-3px);
 }
+
 
 .hand {
     position: absolute;
@@ -40,7 +42,7 @@ footer {
     width: 50%;
     top: 50%;
     transform-origin: 100%;
-    transition: all 0.5s;
+    transition: all 0.1s;
     transition-timing-function: cubic-bezier(1, 2.43, 0.61, 0.98);
 }
 
@@ -55,6 +57,7 @@ footer {
 
 .hour-hand {
     width: 40%;
+    top: 49%;
     left: 10%;
 }
 
